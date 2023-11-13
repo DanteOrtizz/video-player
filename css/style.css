@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+    --background: #1f1d2b;
+    --player-controls-background: #353340;
+    --color: #ceced8;
+    --focus: #7670bf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    max-height: 100vh;
+}
+
+.title {
+    color: var(--color);
+}
+
+.screen {
+    cursor: pointer;
+    width: 70%;
+    height: 500px;
+    background-color: black !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.controls {
+    background-color: var(--player-controls-background);
+    color: var(--color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.controls .btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color);
+}
+
+.controls .btn:hover{
+    color: var(--focus);
+}
+
+.controls .btn .active {
+    color: var(--focus);
+}
+
+.controls .timestamp {
+    color: var(--color);
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+    .screen, .controls {
+        width: 90%;
+    }
+}
