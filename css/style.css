@@ -58,7 +58,7 @@ body {
     color: var(--focus);
 }
 
-.controls .btn .active {
+.active {
     color: var(--focus);
 }
 
